@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <title>Secure Message</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <h2>Genrate Keys</h2>
+            <div class="btn" id="key_gen">Genrate</div>
+        </div>
+        <div class="card vf" id="eg_message_box">
+            <h3>Encryption Key</h3>
+            <div class="result" id="eg_message"></div>
+        </div>
+        <div class="card vf" id="dg_message_box">
+            <h3>Dcryption Key</h3>
+            <div class="result" id="dg_message"></div>
+        </div>
+        <div class="card">
+            <h2>Encrypt Message</h2>
+            <form action="">
+                <input type="text" placeholder="Enter text" id="p_text">
+                <input type="text" placeholder="Enter E-Key" id="e_key">
+            </form>
+            <div class="btn" id="e_btn">Encrypt</div>
+        </div>
+        <div class="card vf" id="e_message_box">
+            <h3>Encrypted Message</h3>
+            <div class="result" id="e_message"></div>
+        </div>
+        <div class="card">
+            <h2>Decrypt Message</h2>
+            <form action="">
+                <input type="text" placeholder="Enter cypher" id="d_text">
+                <input type="text" placeholder="Enter D-Key" id="d_key">
+            </form>
+            <div class="btn" id="d_btn">Dcrypt</div>
+        </div>
+        <div class="card vf" id="d_message_box">
+            <h3>Decrypted Message</h3>
+            <div class="result" id="d_message"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

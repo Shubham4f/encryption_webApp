@@ -1,0 +1,83 @@
+:root {
+    --default_font: 'Montserrat', sans-serif;
+    --pri: #ff5e57;
+    --scnd: #4bcffa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--default_font);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--scnd);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    min-width: 30vw;
+    background: #fff;
+    box-shadow: 1px 1px 7px 4px rgb(76, 75, 75); 
+    margin: 2rem;
+}
+
+.card h2{
+    color: var(--pri);
+    margin-bottom: 2rem;
+}
+
+.card form input{
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--pri);
+}
+
+.btn{
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid black;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--pri);
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    color: #1a1a1d;
+    background: var(--scnd);
+    transition: 0.3s ease;
+}
+
+.card h3{
+    color: var(--pri);
+    margin-bottom: 2rem;
+}
+
+.vf{
+    display: none;
+}
+
+.vo{
+    display: block !important;
+}
