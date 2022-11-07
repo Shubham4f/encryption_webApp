@@ -4,7 +4,7 @@ const key_gen = document.querySelector('#key_gen');
 values = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
 key_gen.addEventListener('click', ()=>{
-    eg_key = Math.floor((Math.random() * 9999) + 123);
+    eg_key = Math.floor((Math.random() * 10000) + 123);
     dg_key = dKeyGen(eg_key);
     const eg_message = document.querySelector("#eg_message");
     const eg_box = document.querySelector('#eg_message_box');
