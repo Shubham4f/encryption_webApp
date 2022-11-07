@@ -76,7 +76,7 @@ function valueGen(i) {
 }
 
 function dKeyGen(e_key) {
-    d_key = e_key*2+127;
+    d_key = e_key*2+101;
     d_key = d_key + "";
 	d_key = d_key.split("").reverse().join("");
     return d_key;
@@ -86,6 +86,6 @@ function dKeyD(d_key) {
     d_key = d_key + "";
 	d_key = d_key.split("").reverse().join("");
     key = Number(d_key);
-    key = (key-127)/2;
+    key = (key-101)/2;
     return key;
 }
